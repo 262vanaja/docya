@@ -12,6 +12,10 @@ import {MatFormFieldModule, MatLabel} from '@angular/material/form-field';
 import { AdminComponent } from './admin/admin.component';
 import {MatButtonModule} from '@angular/material/button';
 import { NursclistComponent } from './nursclist/nursclist.component';
+import {MatTableModule} from '@angular/material/table';
+import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,8 +25,8 @@ import { NursclistComponent } from './nursclist/nursclist.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,MatToolbarModule, MatIconModule,MatStepperModule,
-    MatInputModule,MatButtonModule
+    BrowserAnimationsModule,MatToolbarModule,MatIconModule,MatStepperModule,
+    MatInputModule,MatButtonModule,MatTableModule,MatStepperModule,MatDialogModule,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
