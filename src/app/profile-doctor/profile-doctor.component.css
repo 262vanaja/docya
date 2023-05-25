@@ -1,0 +1,12 @@
+h1{
+    
+    height: 50px;
+    width: 50px;
+    border: 2px solid #263c47;
+    border-radius:50px;
+    text-align: center;
+    font:32px Arial,sans-serif;
+    margin: 30px auto 30px auto;
+    background-color:rgb(163, 202, 247);
+    color: #0a0101;
+}
