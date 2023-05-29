@@ -18,11 +18,12 @@ import { FormsModule } from '@angular/forms';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatListModule} from '@angular/material/list';
 import { GfgComponent } from './gfg/gfg.component';
-import { FirstComponent } from './first/first.component';
 import { NurseComponent } from './nurse/nurse.component';
 import {MatCardModule} from '@angular/material/card'
 import { ProfileDoctorComponent } from './profile-doctor/profile-doctor.component';
 import { ProfilPatientComponent } from './profil-patient/profil-patient.component';
+import { ViewpresriptionComponent } from './viewpresription/viewpresription.component';
+
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { ProfilPatientComponent } from './profil-patient/profil-patient.componen
     AdminComponent,
     NursclistComponent,
     GfgComponent,
-    FirstComponent,
     NurseComponent,
     ProfileDoctorComponent,
     ProfilPatientComponent,
+    ViewpresriptionComponent,
+
 
   ],
   imports: [
