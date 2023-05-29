@@ -2,23 +2,20 @@ import { Component } from '@angular/core';
 import {MatTableModule} from '@angular/material/table';
 import {MatTableDataSource} from '@angular/material/table';
 export interface PeriodicElement {
-  name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  ID: number;
+  MedicalName:string;
+  Dosage: string;
+  Notes: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {position: 1, name: 'ane', weight: 1.0079, symbol: 'H'},
-  {position: 2, name: 'boomi', weight: 4.0026, symbol: 'He'},
-  {position: 3, name: 'cat', weight: 6.941, symbol: 'Li'},
-  {position: 4, name: 'dolly', weight: 9.0122, symbol: 'Be'},
-  {position: 5, name: 'eliven', weight: 10.811, symbol: 'B'},
-  {position: 6, name: 'fazi', weight: 12.0107, symbol: 'C'},
-  {position: 7, name: 'gopi', weight: 14.0067, symbol: 'N'},
-  {position: 8, name: 'honey', weight: 15.9994, symbol: 'O'},
-  {position: 9, name: 'iloveu', weight: 18.9984, symbol: 'F'},
-  {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
+  {ID: 1, MedicalName: 'dolo',Dosage: '1-0-1',Notes: 'fever'},
+  {ID: 2, MedicalName: 'Lisinopril',Dosage: '1-0-2',Notes: 'None'},
+  {ID: 3, MedicalName: 'Atorvastatin',Dosage: '0-0-1',Notes: 'None'},
+  {ID: 4, MedicalName: 'Omeprazole',Dosage: '1-1-1',Notes: 'None'},
+  {ID: 5, MedicalName: 'Amlodipine',Dosage: '1-0-0',Notes: 'None'},
+  {ID: 6, MedicalName: 'vit c',Dosage: '1-1-1',Notes: 'None'},
+  
 ];
 @Component({
   selector: 'app-viewpresription',
@@ -27,7 +24,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ViewpresriptionComponent {
   
-  displayedColumns: string[] = ['demo-position', 'demo-name', 'demo-weight', 'demo-symbol'];
-  dataSource = ELEMENT_DATA;
+  displayedColumns: string[] = ['ID', 'MedicalName','Dosage', 'Notes'];
+  dataSource = new MatTableDataSource(ELEMENT_DATA);
 
 }
