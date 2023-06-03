@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,7 +21,6 @@ import { NurseComponent } from './nurse/nurse.component';
 import {MatCardModule} from '@angular/material/card'
 import { ProfileDoctorComponent } from './profile-doctor/profile-doctor.component';
 import { ProfilPatientComponent } from './profil-patient/profil-patient.component';
-import { ViewpresriptionComponent } from './viewpresription/viewpresription.component';
 
 
 @NgModule({
@@ -34,9 +32,7 @@ import { ViewpresriptionComponent } from './viewpresription/viewpresription.comp
     NurseComponent,
     ProfileDoctorComponent,
     ProfilPatientComponent,
-    ViewpresriptionComponent,
-
-
+   
   ],
   imports: [
     BrowserModule,
